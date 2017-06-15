@@ -1,0 +1,6 @@
+problem Logistics-Q3-4-3 is solved in 11.281s
+problem Logistics-Q2-6-3 is solved in 31.921s
+problem Logistics-Q2-12-4 could not be solved with any solver.
+problem Logistics-Q2-21-8 could not be solved with any solver.
+
+Big problems(Logistics-Q2-12-4 and Logistics-Q2-21-8) could not be solved. However, my implementation could solve first two problems within one minute with default solver.

@@ -1,0 +1,5 @@
+problem Logistics-Q1-4-3 is solved in 0.068s
+problem Logistics-Q1-6-3 is solved in 0.091s
+problem Logistics-Q1-12-4 is solved in 0.106s
+
+problem Logistics-Q1-21-8 could not be solved with FD solver, but Gecode solver solved it in 232msec.

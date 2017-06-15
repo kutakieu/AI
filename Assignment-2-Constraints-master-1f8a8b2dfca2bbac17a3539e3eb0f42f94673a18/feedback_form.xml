@@ -1,0 +1,54 @@
+<!-- Feedback form for COMP3620 Assignment 2 -->
+
+<feedback>
+<!-- Marks for Q1 -->
+<question name="Exercise 1: allocating">
+<marks value="30" max="30" bonus="0"/>
+<comments>
+  Nicely done.
+</comments>
+</question>
+
+<!-- Marks for Q2 -->
+<question name="Exercise 2: routing">
+<marks value="30" max="30" bonus="0"/>
+<comments>
+  Good job.
+</comments>
+</question>
+
+
+<!-- Marks for Q3 -->
+<question name="Exercise 3: optimising">
+<marks value="8" max="10" bonus="0"/>
+<comments>
+  There's a small bug in the encoding which means that some trips to/from the
+  depot aren't counted. Remember that each truck which does not remain at the
+  depot will have to leave the depot to get to its first customer, then go back to
+  the depot at the end of its run. Replacing "time_table[i, t]!=0 with "true"
+  partly (in tot_cost constraint) partly fixes this. Small penalty for that, but
+  otherwise correct.
+</comments>
+</question>
+
+
+<!-- Marks for Q4 -->
+<question name="Exercise 4: LNS">
+<marks value="19" max="30" bonus="0"/>
+<comments>
+  Managed to get some improvement on 12-4 when using -sat, but relatively little
+  improvement on 12-8 (it went down from ~92,000 to ~80,000 in a couple of
+  minutes, but our solution gets down below 55,000 in the same amount of time).
+  Choice of neighbourhood is likely to blame here: randomly deleting items from
+  your "allocation" array doesn't give Minizinc much chance to improve the
+  solution due to interactions with other items in the array. e.g. if you delete
+  just one entry for a truck, Minizinc will probably just reconstruct the old
+  route for that truck. Deleting semantically meaningful parts of the plan (e.g.
+  the *entire* route for a truck) is usually more effective. Some messiness:
+  Logistics-opt.mzn and Logistics-sat.mzn were missing from your submission, so I
+  had to guess what was in there (just "include" and "solve mininize"/"solve
+  satisfy", right?). Also had to fix same bug from Q3.
+</comments>
+</question>
+
+</feedback>

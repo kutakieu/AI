@@ -1,0 +1,7 @@
+problem Logistics-Q2-4-3 is solved in 0.175s
+problem Logistics-Q2-6-3 is solved in 0.222s
+problem Logistics-Q2-12-4 is solved in 0.467s
+
+problem Logistics-Q2-21-8 is not solved with FD solver, but Gecode solver solved it in 232msec.
+
+Since my program could not solve the biggest problem in Q1, the biggest problem in Q2 also could not be solved. However, the other three questions are still solved quickly.

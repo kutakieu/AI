@@ -1,0 +1,8 @@
+Allocation array which stores the information about each truck's allocation is modified to find optimal solution. If I change other array such as time table, this program cannot search widely. Therefore, I decided to modify the allocation array to make this program search other potential pattern of allocation more flexibly.
+At the beginning of each iteration, extract the information about the current allocation and store in an array. Then look at each value of this array and decide which value to destroy randomly. Generate "keep.dzn" file from this array at the same time. Finally, give this file and other required files to the minizinc program and run this program.
+As it selects the value to destroy randomly, the length of time this program takes to converge changes every time.
+This program stops if it stops improving the score 50 times consecutively. So it takes approximately less than 1 minute.
+Because of the random value, it is not guaranteed that this program finds the global optimal score.
+If the program keeps not improving the score, probability to modify the value increases to search more widely.
+
+In problem Logistics-Q2-12-4.dzn and Logistics-Q2-21-8.dzn, it takes too much time to solve minimize in each iteration, so it needs to be set to satisfy for this problem. However, because of this it is more difficult to get the optimal score for this problem with this program.

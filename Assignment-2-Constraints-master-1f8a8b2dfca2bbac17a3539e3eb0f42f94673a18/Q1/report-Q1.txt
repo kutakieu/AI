@@ -1,0 +1,7 @@
+problem Logistics-Q1-4-3 is solved in 0.068s
+problem Logistics-Q1-6-3 is solved in 0.091s
+problem Logistics-Q1-12-4 is solved in 0.106s
+
+problem Logistics-Q1-21-8 could not be solved with FD solver, but Gecode solver solved it in 232msec.
+
+Although my implementation solved first three problems quickly, it could not solve the biggest problem. So I may have made too many constraints too solve big problem. I need to come up with more efficient implementation.
